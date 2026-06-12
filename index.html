@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Roshni | Aspiring AI/ML Engineer|Data Scientist</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="cursor"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">R<span>.</span></div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="glow"></div>
+
+  <!-- ONLY PROFILE PHOTO -->
+  <img src="images/profile.jpg" class="avatar"/>
+
+  <h1>Hi, I'm <span>Roshni</span></h1>
+  <h2> Aspiring AI/ML Engineer • Data Scientist</h2>
+
+  <p>
+    I build LLM-powered systems, ML pipelines, and real-world AI applications
+    focused on healthcare, recommendation systems, and intelligent automation.
+  </p>
+
+  <div class="buttons">
+    <a href="#projects" class="primary">View Projects</a>
+    <a href="resume.pdf" target="_blank" class="secondary">Resume</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="about-content">
+    <h2>About Me</h2>
+    <p>
+      I'm a 2025 Computer Science graduate with a strong focus on Artificial
+      Intelligence and Machine Learning. I enjoy building practical,
+      production-ready AI solutions that solve real-world problems and create
+      meaningful user experiences.
+
+      My work includes developing LLM-powered chatbots, Retrieval-Augmented
+      Generation (RAG) pipelines, semantic search systems, and machine learning
+      models for recommendation, prediction, and automation. I am passionate
+      about transforming data into actionable insights and building intelligent
+      applications that deliver measurable value.
+
+      Beyond model development, I enjoy working across the entire AI lifecycle,
+      from data preprocessing and experimentation to deployment and optimization.
+      I am continuously exploring advancements in Generative AI, Vector
+      Databases, and modern AI infrastructure while seeking opportunities to
+      contribute to impactful products and innovative teams.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section dark">
+  <h2>Skills</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+      <p>Python</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+      <p>SQL</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" />
+      <p>Pandas</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" />
+      <p>NumPy</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+      <p>Docker</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" />
+      <p>FastAPI</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="project" onclick="openProject(1)">
+    <h3>Cancer Gene Expression Classifier</h3>
+  </div>
+
+  <div class="project" onclick="openProject(2)">
+    <h3>DocuMind AI</h3>
+  </div>
+
+  <div class="project" onclick="openProject(3)">
+    <h3>Movie Recommendation System</h3>
+  </div>
+
+  <div class="project" onclick="openProject(4)">
+    <h3>Genomic Analysis of Liver Metastasis from Colorectal Cancer</h3>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">&times;</span>
+    <div id="modal-text"></div>
+    <a id="modal-link" target="_blank" class="primary">View on GitHub</a>
+  </div>
+</div>
+<!-- EXPERIENCE -->
+<section id="experience" class="section dark">
+  <h2>Experience</h2>
+
+  <div class="card experience-card">
+
+    <h3>Technology Intern — Logic Hive Solutions Pvt. Ltd</h3>
+    <p class="exp-date">February 2025 – May 2025</p>
+
+    <ul>
+      <li>
+        Built an LLM-powered chatbot using OpenAI API, enabling smoother client interactions.
+      </li>
+
+      <li>
+        Designed Qdrant (VectorDB) and MongoDB pipelines for semantic search and fast retrieval, improving response accuracy.
+      </li>
+
+      <li>
+        Implemented CRUD features within chatbot, improving usability and client experience.
+      </li>
+
+      <li>
+        <b>Tech Stack:</b> Python, LLMs, FastAPI, Docker, MongoDB, VectorDB
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+
+  <div class="contact-container">
+
+    <a href="mailto:roshnibhat76@gmail.com" class="contact-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"/>
+      <span>Email</span>
+    </a>
+
+    <a href="https://github.com/Roshni2206" target="_blank" class="contact-card github">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+  <span>GitHub</span>
+</a>
+
+    <a href="https://linkedin.com/in/roshni-81a163229/" target="_blank" class="contact-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"/>
+      <span>LinkedIn</span>
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Roshni</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
